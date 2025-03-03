@@ -19,9 +19,8 @@ const Body = () => {
 
   const fetchRestaurantsData = async () => {
     try {
-      const response = await fetch(
-        "/dapi/restaurants/list/v5?lat=28.45970&lng=77.02820&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-      );
+      // 
+      const response = await fetch("/dapi/restaurants/list/v5?lat=28.45970&lng=77.02820&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
       const data = await response.json();
       console.log(data);
       
